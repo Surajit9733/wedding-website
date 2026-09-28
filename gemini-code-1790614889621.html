@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Wedding Celebration</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #4a154b;
+            --primary-dark: #2c0b2e;
+            --accent-gold: #d4af37;
+            --bg-light: #faf7f2;
+            --text-color: #333;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background-color: var(--bg-light);
+            color: var(--text-color);
+            line-height: 1.6;
+        }
+
+        h1, h2, h3 {
+            font-family: 'Cinzel', serif;
+        }
+
+        /* Hero Section */
+        .hero {
+            position: relative;
+            height: 90vh;
+            background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(44, 11, 46, 0.7)), 
+                        url('WhatsApp Image 2026-09-28 at 10.12.04 PM-3.jpeg') center/cover no-repeat;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: #fff;
+        }
+
+        .hero-content h1 {
+            font-size: 3.5rem;
+            margin-bottom: 10px;
+            color: var(--accent-gold);
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.6);
+        }
+
+        .hero-content p {
+            font-size: 1.5rem;
+            letter-spacing: 2px;
+            margin-bottom: 25px;
+        }
+
+        .hero-date {
+            border-top: 1px solid var(--accent-gold);
+            border-bottom: 1px solid var(--accent-gold);
+            padding: 10px 20px;
+            display: inline-block;
+            font-size: 1.2rem;
+        }
+
+        /* Our Story */
+        .story {
+            padding: 80px 20px;
+            max-width: 900px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .story h2 {
+            font-size: 2.5rem;
+            color: var(--primary);
+            margin-bottom: 20px;
+        }
+
+        .story p {
+            font-size: 1.1rem;
+            color: #555;
+        }
+
+        /* Photo Gallery */
+        .gallery-section {
+            padding: 60px 20px;
+            background-color: #fff;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 2.5rem;
+            color: var(--primary);
+            margin-bottom: 40px;
+        }
+
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .gallery-item {
+            overflow: hidden;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .gallery-item:hover {
+            transform: translateY(-5px);
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: 380px;
+            object-fit: cover;
+            display: block;
+        }
+
+        /* Event Details */
+        .events {
+            padding: 80px 20px;
+            max-width: 1000px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .events-cards {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+            justify-content: center;
+            margin-top: 40px;
+        }
+
+        .event-card {
+            background: #fff;
+            padding: 30px;
+            border-radius: 8px;
+            border-top: 4px solid var(--accent-gold);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+            flex: 1 1 300px;
+            max-width: 400px;
+        }
+
+        .event-card h3 {
+            color: var(--primary);
+            margin-bottom: 10px;
+        }
+
+        /* Footer */
+        footer {
+            background-color: var(--primary-dark);
+            color: var(--accent-gold);
+            text-align: center;
+            padding: 30px 20px;
+            font-size: 0.9rem;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .hero-content h1 { font-size: 2.5rem; }
+            .hero-content p { font-size: 1.2rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="hero-content">
+            <h1>Adwitiya & Surajit</h1>
+            <p>ARE GETTING MARRIED</p>
+            <div class="hero-date">SAVE THE DATE</div>
+        </div>
+    </header>
+
+    <!-- Our Story Section -->
+    <section class="story">
+        <h2>Welcome to Our Celebration</h2>
+        <p>We are delighted to invite you to celebrate our special day with us. Join us as we step into a new chapter of love, togetherness, and happiness.</p>
+    </section>
+
+    <!-- Photo Gallery -->
+    <section class="gallery-section">
+        <h2 class="section-title">Our Moments</h2>
+        <div class="gallery-grid">
+            <div class="gallery-item"><img src="WhatsApp Image 2026-09-28 at 10.12.04 PM-3.jpeg" alt="Couple Moment 1"></div>
+            <div class="gallery-item"><img src="WhatsApp Image 2026-09-28 at 10.12.05 PM.jpeg" alt="Couple Moment 2"></div>
+            <div class="gallery-item"><img src="WhatsApp Image 2026-09-28 at 10.12.04 PM-2.jpeg" alt="Couple Moment 3"></div>
+            <div class="gallery-item"><img src="WhatsApp Image 2026-09-28 at 10.12.03 PM.jpeg" alt="Couple Moment 4"></div>
+            <div class="gallery-item"><img src="WhatsApp Image 2026-09-28 at 10.12.05 PM-2.jpeg" alt="Couple Moment 5"></div>
+            <div class="gallery-item"><img src="WhatsApp Image 2026-09-28 at 10.12.05 PM-3.jpeg" alt="Couple Moment 6"></div>
+        </div>
+    </section>
+
+    <!-- Events Section -->
+    <section class="events">
+        <h2 class="section-title">Wedding Schedule</h2>
+        <div class="events-cards">
+            <div class="event-card">
+                <h3>The Ceremony</h3>
+                <p><strong>Date:</strong> [Date]</p>
+                <p><strong>Time:</strong> [Time]</p>
+                <p><strong>Venue:</strong> [Venue Name & Address]</p>
+            </div>
+            <div class="event-card">
+                <h3>The Reception</h3>
+                <p><strong>Date:</strong> [Date]</p>
+                <p><strong>Time:</strong> [Time]</p>
+                <p><strong>Venue:</strong> [Venue Name & Address]</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>Created with ❤️ to celebrate our special day.</p>
+    </footer>
+
+</body>
+</html>
